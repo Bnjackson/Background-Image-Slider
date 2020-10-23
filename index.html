@@ -8,19 +8,47 @@
 </head>
 <body>
     <div class="image-slider-container">
-        <div class="img-container">
-            <img src="CSS/Media/image6.jpg" alt="">
-            <img src="CSS/Media/image1.jpg" alt="">
-            <img src="CSS/Media/image2.jpg" alt="">
-            <img src="CSS/Media/image3.jpg" alt="">           
-            <img src="CSS/Media/image4.jpg" alt="">
-            <img src="CSS/Media/image5.jpg" alt="">
-            <img src="CSS/Media/image6.jpg" alt="">
-            <img src="CSS/Media/image1.jpg" alt="">
+        <button class="arrow right" onclick="plusSlides(1)" id="prevBtn"></button>
+        <button class="arrow left" onclick="plusSlides(-1)" id="nextBtn"></button>
+        <div class="slides">
+            <div class="slide-number">1/6</div>
+            <img src="CSS/Media/image1.jpg" alt="Lions">
+            <div class="caption">Caption One</div>
+        </div>
+        <div class="slides">
+            <div class="slide-number">2/6</div>
+            <img src="CSS/Media/image2.jpg" alt="Swan">
+            <div class="caption">Caption Two</div>
+        </div>
+        <div class="slides">
+            <div class="slide-number">3/6</div>
+            <img src="CSS/Media/image3.jpg" alt="Owl">
+            <div class="caption">Caption Three</div>
+        </div>
+        <div class="slides">
+            <div class="slide-number">4/6</div>
+            <img src="CSS/Media/image4.jpg" alt="Stag">
+            <div class="caption">Caption Four</div>
+        </div>
+        <div class="slides">
+            <div class="slide-number">5/6</div>
+            <img src="CSS/Media/image5.jpg" alt="orangutan">
+            <div class="caption">Caption Five</div>
+        </div>
+        <div class="slides">
+            <div class="slide-number">6/6</div>
+            <img src="CSS/Media/image6.jpg" alt="Butterfly">
+            <div class="caption">Caption Six</div>
         </div>
     </div>
-    <button id="prevBtn">Prev</button>
-    <button id="prevBtn">Next</button>
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
     <script src="JS/script.js"></script>    
 </body>
 </html>
